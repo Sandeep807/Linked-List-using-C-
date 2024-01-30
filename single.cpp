@@ -47,7 +47,7 @@ void Singly::display()
     }
 }
 
-Node *Singly ::search(int value)
+Node* Singly ::search(int value)
 {
     Node *temp = start;
     while (temp != NULL)
@@ -185,7 +185,7 @@ void Singly ::input()
              << "\n3.Delete at first : " << endl;
         cout << "4.Delete at last : "
              << "\n5.Delete  specific :"
-             << "\n6.Display\n7.Search\n";
+             << "\n6.Display\n7.Insert after\n";
         int choice;
         cout << "Enter your choice : " << endl;
         cin >> choice;
@@ -224,18 +224,12 @@ void Singly ::input()
             break;
 
         case 7:
-            int num3;
-            cout << "Enter data for searching : ";
+            int num3,num4;
+            cout << "Enter after value : ";
             cin >> num3;
-            search(num3);
-            // if (x == nullptr)
-            // {
-            //     cout << "Data not found " << endl;
-            // }
-            // else
-            // {
-            //     cout << "Data found : " << x << endl;
-            // }
+            cout << "Enter value : ";
+            cin >> num4;
+            insertAfter(search(num3),num4);
             break;
         default:
             cout << "Invalid choice ";

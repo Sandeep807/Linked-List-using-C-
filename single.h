@@ -18,7 +18,7 @@ public:
     }
     void insertAtFirst(int);
     void insertAtEnd(int);
-    Node *search(int);
+    Node* search(int);
     void insertAfter(Node *, int);
     void display();
     void deleteAtFirst();
